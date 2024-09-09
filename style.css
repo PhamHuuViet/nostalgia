@@ -24,7 +24,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(var(--gray) 0%, var(--violet) 100%);
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/5e26e9ea8178976156c1080219b99a26.png");
 }
 .wrapper{
   width: 380px;
@@ -53,8 +53,16 @@ body{
 }
 .top-bar span{
   font-size: 18px;
+  font-weight: bold;
   margin-left: -3px;
   color: var(--lightblack);
+  animation-name: colors;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-transform: capitalize;
 }
 .img-area{
   width: 100%;
@@ -125,6 +133,33 @@ body{
   font-size: 13px;
   color: var(--lightblack);
 }
+#volume-control {
+  width: 100%;
+  margin-top: 50px;
+  -webkit-appearance: none; /* Xóa kiểu mặc định trên WebKit */
+  background: transparent; /* Nền trong suốt để không che khuất màu nền của trang */
+  height: 8px; /* Chiều cao của thanh trượt */
+  border-radius: 5px; /* Bo góc thanh trượt */
+}
+
+/* Kiểu dáng cho thanh trượt (WebKit) */
+#volume-control::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, var(--pink) 0%, var(--violet) 100%); /* Gradient từ màu hồng đến màu tím */
+  height: 8px; /* Chiều cao của thanh trượt */
+  border-radius: 5px; /* Bo góc thanh trượt */
+}
+
+#volume-control::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Xóa kiểu mặc định của nút trượt */
+  background: #ffffff; /* Màu nút trượt */
+  border: 2px solid black; /* Viền nút trượt */
+  width: 20px; /* Chiều rộng của nút trượt */
+  height: 20px; /* Chiều cao của nút trượt */
+  border-radius: 50%; /* Bo góc nút trượt */
+  cursor: pointer; /* Con trỏ chuột khi di chuyển trên nút trượt */
+  margin-top: -6px; /* Đẩy nút trượt lên để căn giữa với thanh trượt */
+}
+
 .controls{
   margin: 40px 0 5px 0;
 }
@@ -245,4 +280,25 @@ ul li .audio-duration{
 ul li.playing{
   pointer-events: none;
   color: var(--violet);
+}
+@keyframes colors {
+  0%{
+      color: #FFA500;
+  }
+  25%{
+      color: #cd295a;
+   }
+   50%{
+
+      color: #fab0b3;
+   }
+   75%{
+      
+      color: #1eae98;
+   }
+   100%{
+    
+      color: #FF00FF;
+   }
+
 }

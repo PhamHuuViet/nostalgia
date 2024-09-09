@@ -11,6 +11,7 @@ progressBar = progressArea.querySelector(".progress-bar"),
 musicList = wrapper.querySelector(".music-list"),
 moreMusicBtn = wrapper.querySelector("#more-music"),
 closemoreMusic = musicList.querySelector("#close");
+const volumeControl = document.getElementById('volume-control');
 
 let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 isMusicPaused = true;
@@ -19,6 +20,7 @@ window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   playingSong(); 
 });
+
 
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
@@ -31,8 +33,12 @@ function loadMusic(indexNumb){
 function playMusic(){
   wrapper.classList.add("paused");
   playPauseBtn.querySelector("i").innerText = "pause";
+  mainAudio.volume = volumeControl.value;
   mainAudio.play();
 }
+volumeControl.addEventListener('input', () => {
+  mainAudio.volume = volumeControl.value;
+});
 
 //pause music function
 function pauseMusic(){
