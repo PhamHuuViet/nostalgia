@@ -133,13 +133,34 @@ body{
   font-size: 13px;
   color: var(--lightblack);
 }
+/* Đặt kiểu cho thanh trượt âm lượng */
 #volume-control {
-  width: 30%;
-  margin-top: 30px;
-  height: 7px; 
-  border-radius: 5px;
-  font-weight: bold;
+  width: 100%;
+  margin-top: 50px;
+  -webkit-appearance: none; /* Xóa kiểu mặc định trên WebKit */
+  background: transparent; /* Nền trong suốt để không che khuất màu nền của trang */
+  height: 8px; /* Chiều cao của thanh trượt */
+  border-radius: 5px; /* Bo góc thanh trượt */
 }
+
+/* Kiểu dáng cho thanh trượt (WebKit) */
+#volume-control::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, var(--pink) 0%, var(--violet) 100%); /* Gradient từ màu hồng đến màu tím */
+  height: 8px; /* Chiều cao của thanh trượt */
+  border-radius: 5px; /* Bo góc thanh trượt */
+}
+
+#volume-control::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Xóa kiểu mặc định của nút trượt */
+  background: #ffffff; /* Màu nút trượt */
+  border: 2px solid black; /* Viền nút trượt */
+  width: 20px; /* Chiều rộng của nút trượt */
+  height: 20px; /* Chiều cao của nút trượt */
+  border-radius: 50%; /* Bo góc nút trượt */
+  cursor: pointer; /* Con trỏ chuột khi di chuyển trên nút trượt */
+  margin-top: -6px; /* Đẩy nút trượt lên để căn giữa với thanh trượt */
+}
+
 .controls{
   margin: 40px 0 5px 0;
 }
