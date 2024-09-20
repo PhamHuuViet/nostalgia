@@ -27,6 +27,48 @@ let allMusic = [
     src: "lofi-2"
   },
   {
+    name: "Lofi Chill 3",
+    artist: "Hạ Sang",
+    img: "lofi-3",
+    src: "lofi-3"
+  },
+  {
+    name: "Lofi Chill 4",
+    artist: "Hạ Sang",
+    img: "lofi-4",
+    src: "lofi-4"
+  },
+  {
+    name: "Playist Dewie",
+    artist: "Dewie",
+    img: "dewie",
+    src: "dewie"
+  },
+  {
+    name: "Playist Dewie 2",
+    artist: "Dewie",
+    img: "dewie-2",
+    src: "dewie-2"
+  },
+  {
+    name: "PLAYLIST TAYNGUYENSOUND HIT TRACKS",
+    artist: "TAYNGUYENSOUND ",
+    img: "taynguyensound",
+    src: "taynguyensound"
+  },
+  {
+    name: "Bạn Có Tài Mà Collection #1",
+    artist: "Bạn Có Tài Mà ",
+    img: "bancotaima-1",
+    src: "bancotaima-1"
+  },
+  {
+    name: "Bạn Có Tài Mà Collection #2",
+    artist: "Bạn Có Tài Mà ",
+    img: "bancotaima-2",
+    src: "bancotaima-2"
+  },
+  {
     name: "Đây đơn giản là Playlist của Vũ.",
     artist: "Vũ",
     img: "vu",

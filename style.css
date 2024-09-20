@@ -18,13 +18,17 @@
   --pinkshadow: #ffcbdd;
   --lightbshadow: rgba(0,0,0,0.15);
 }
+h1{
+  color: white;
+  text-align: center;
+}
 body{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(var(--gray) 0%, var(--violet) 100%);
-  background-image: url("./images/5e26e9ea8178976156c1080219b99a26.png");
+  background-image: url("./images/background.png");
 }
 .wrapper{
   width: 380px;
