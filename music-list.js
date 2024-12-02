@@ -39,6 +39,30 @@ let allMusic = [
     src: "lofi-4"
   },
   {
+    name: "Playlist Lofi Tết (NEW)",
+    artist: "Hạ Sang",
+    img: "tet",
+    src: "tet"
+  },
+  {
+    name: "Playlist CM1X - 1 (NEW)",
+    artist: "CM1X Official",
+    img: "cm1x-1",
+    src: "cm1x-1"
+  },
+  {
+    name: "Playlist Mưa - 1 (NEW)",
+    artist: "Dịu Kha",
+    img: "mua-1",
+    src: "mua-1"
+  },
+  {
+    name: "Playlist Mưa - 2 (NEW)",
+    artist: "Dịu Kha",
+    img: "mua-2",
+    src: "mua-2"
+  },
+  {
     name: "Playist Dewie",
     artist: "Dewie",
     img: "dewie",
